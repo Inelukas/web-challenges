@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <title>HTML Basics Excercise</title>
+    <meta charset="UTF-8" />
+  </head>
+  <!--someone forgot to wrap the content of our webpage with an HTML element,
+	which one was it again?-->
+  <body>
+      <h1>Jane Doe</h1>
+      <!--Which elements could be used to link to parts of the webpage,
+		which appear below?-->
+        <p><a href=#about-me>About Me</a></p>
+        <p><a href=#contact>Contact</a></p>
+        <p><a href=#skills>Skillset</a></p>
+    <!--Looks like the following part is the central content of our webpage.-->
+    <main>
+      <p id="about-me">
+        <h2>About me</h2>
+          Hi there! Welcome to my personal website. Here is gathered the most
+          important information about me. If you want to work with me or get to
+          know me, please don't hesitate to get in contact.
+        </p>
+        <!--What element could be used to combine an image with a descriptive caption?-->
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="a random picture"
+          />
+          <figcaption>
+            A random picture, because I would like to maintain my privacy and
+            let my code speak for me, instead of images.
+          </figcaption>
+        </figure>
+    </main>
+      <p id="contact">
+        <h2>Contact</h2>
+        <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
+          <p><a href="https://github.com/neuefische">GitHub</a></p>
+          <p><a href="https://de.linkedin.com/">LinkedIn</a></p>
+          <p><a href="https://codesandbox.io/">CodeSandbox</a></p>
+      </p>
+      <p id="skills">
+        <h2>Skillset</h2>
+        <!--This part could use some bulletpoint to be more structured-->
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Painting rainbows</li>
+          <li>Party</li>
+        </ul>
+      </p>
+  </body>
+</html>
