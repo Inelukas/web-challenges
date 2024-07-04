@@ -95,39 +95,21 @@ h1 {
   width: 100%;
 }
 
-.cat2,
-.cat3 {
-  display: none;
-}
+
 
 @media (min-width: 600px) {
   .box--two {
     width: 200px;
   }
 
-  .cat1 {
-    display: none;
-  }
-
-  .cat2 {
-    display: block;
-  }
 }
 
 @media (min-width: 1200px) {
   .box--two {
     width: 400px;
   }
-
-  .cat1,
-  .cat2 {
-    display: none;
-  }
-
-  .cat3 {
-    display: block;
-  }
 }
+
 
 @media (orientation: landscape) {
   .box--three {
