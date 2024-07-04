@@ -22,7 +22,8 @@ const isReported = true;
 */
 
 // --v-- write your code here --v--
-console.log(title, text, likes, user, isReported)
-likes++
-console.log(title, text, likes, user, isReported)
+console.log(title, text, likes, user, isReported);
+likes++;
+console.log(title, text, likes, user, isReported);
 // --^-- write your code here --^--
+
