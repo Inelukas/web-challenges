@@ -264,10 +264,6 @@ width, etc. */
     min-height: 300px;
   }
 
-  .--forest {
-    float: left;
-  }
-
   .intro-text {
     width: 45%;
     align-self: flex-start;
