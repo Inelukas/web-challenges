@@ -39,7 +39,7 @@ function calculatePizzaGain(diameter1, diameter2) {
 // define the function updatePizzaDisplay here
 
 function updatePizzaDisplay(pizzaElement, newSize) {
-  return pizzaElement.style.width = (newSize / 24 * 100) + "px";
+  return (newSize / 24 * 100) + "px";
 }
 
 // Task 3
