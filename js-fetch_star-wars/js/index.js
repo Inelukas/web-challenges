@@ -46,8 +46,7 @@ async function fetchDataAndRender() {
   const data = await response.json();
   const results = data.results;
   
-  const resultsArray = Object.values(results);
-  resultsArray.forEach((carddata) => {
+  results.forEach((carddata) => {
     const newcard = Card(carddata);
     renderElement(newcard);
   })
