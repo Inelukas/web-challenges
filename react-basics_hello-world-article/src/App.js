@@ -17,5 +17,5 @@ function HelloWorldArticle() {
 }
 
 export default function App() {
-  return HelloWorldArticle();
+  return <HelloWorldArticle/>;
 }
