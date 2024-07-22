@@ -2,11 +2,10 @@ import {React, useState} from "react";
 import "./styles.css";
 
 export default function App() {
-  let [code, setCode] = useState("")
+  const [code, setCode] = useState("")
 
   function handleClick() {
     setCode(`${code + event.target.textContent}`)
-    console.log(code)
   }
 
 
@@ -17,10 +16,7 @@ export default function App() {
       <div className="button-container">
         <button
           type="button"
-          onClick={() => {
-            console.log("Update Code!");
-            handleClick();
-          }}
+          onClick={() => handleClick()}
         >
           <span role="img" aria-label="Pufferfish">
             🐡
@@ -28,10 +24,7 @@ export default function App() {
         </button>
         <button
           type="button"
-          onClick={() => {
-            console.log("Update Code!");
-            handleClick();
-          }}
+          onClick={() => handleClick()}
         >
           <span role="img" aria-label="Whale">
             🐋
@@ -39,10 +32,7 @@ export default function App() {
         </button>
         <button
           type="button"
-          onClick={() => {
-            console.log("Update Code!");
-            handleClick();
-          }}
+          onClick={() => handleClick()}
         >
           <span role="img" aria-label="Clownfish">
             🐠
@@ -52,10 +42,7 @@ export default function App() {
 
       <button
         type="button"
-        onClick={() => {
-          console.log("Reset Code!");
-          setCode("")
-        }}
+        onClick={() => setCode("")}
       >
         Reset
       </button>
