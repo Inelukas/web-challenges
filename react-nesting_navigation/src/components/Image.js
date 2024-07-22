@@ -1,3 +1,3 @@
-export default function Image({src}) {
-    return <img className="round-image" src={src} alt={src} ></img>
+export default function Image({src, alt}) {
+    return <img className="round-image" src={src} alt={alt} ></img>
 }
