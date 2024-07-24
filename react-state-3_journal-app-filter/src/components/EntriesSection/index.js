@@ -19,10 +19,14 @@ export default function EntriesSection({
     <section className="entries-section">
       <Tabs>
         <Tab onClick={onShowAllEntries} active>
-          All Entries <Badge isActive={filter ? false : true}>{allEntriesCount}</Badge>
+          All Entries{" "}
+          <Badge isActive={filter ? false : true}>{allEntriesCount}</Badge>
         </Tab>
         <Tab onClick={onShowFavoriteEntries}>
-          Favorites <Badge isActive={!filter ? false : true}>{favoriteEntriesCount}</Badge>
+          Favorites{" "}
+          <Badge isActive={!filter ? false : true}>
+            {favoriteEntriesCount}
+          </Badge>
         </Tab>
       </Tabs>
       <div className="entries-section__entries">

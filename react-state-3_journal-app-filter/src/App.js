@@ -38,9 +38,9 @@ const initialEntries = [
 
 function App() {
   const [entries, setEntries] = useState(initialEntries);
-  const [filter, setFilter] = useState("all")
+  const [filter, setFilter] = useState("all");
 
-  const favoriteEntries = entries.filter((entry) => entry.isFavorite)
+  const favoriteEntries = entries.filter((entry) => entry.isFavorite);
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
@@ -58,11 +58,11 @@ function App() {
   }
 
   function handleShowFavoriteEntries() {
-    setFilter("favorites")
+    setFilter("favorites");
   }
 
   function handleShowAllEntries() {
-    setFilter("all")
+    setFilter("all");
   }
 
   return (
