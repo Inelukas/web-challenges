@@ -1,167 +1,167 @@
-const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
+// const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
-function longestWord(array) {
-  let currentLongestWord = "";
-  array.forEach((word) => {
-    if (word.length > currentLongestWord.length) {
-      currentLongestWord = word;
-    }
-  });
-  return currentLongestWord;
-}
+// function longestWord(array) {
+//   let currentLongestWord = "";
+//   array.forEach((word) => {
+//     if (word.length > currentLongestWord.length) {
+//       currentLongestWord = word;
+//     }
+//   });
+//   return currentLongestWord;
+// }
 
-console.log(longestWord(words));
+// console.log(longestWord(words));
 
-//_____________________________________
+// //_____________________________________
 
-function maxOfTwoNumbers(num1, num2) {
-  if (num1 > num2) {
-    return num1;
-  }
-  return num2;
-}
+// function maxOfTwoNumbers(num1, num2) {
+//   if (num1 > num2) {
+//     return num1;
+//   }
+//   return num2;
+// }
 
-console.log(maxOfTwoNumbers(7, 9));
+// console.log(maxOfTwoNumbers(7, 9));
 
-//_____________________________________
+// //_____________________________________
 
-const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+// const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(numbers) {
-  return numbers.reduce((a, b) => a + b);
-}
+// function sumNumbers(numbers) {
+//   return numbers.reduce((a, b) => a + b);
+// }
 
-console.log(sumNumbers(numbers));
+// console.log(sumNumbers(numbers));
 
-//_____________________________________
+// //_____________________________________
 
-// Calculate the average length of the words
+// // Calculate the average length of the words
 
-const words2 = [
-  "eclipse",
-  "harmony",
-  "cascade",
-  "labyrinth",
-  "quartz",
-  "serendipity",
-  "zenith",
-  "ephemeral",
-  "vortex",
-  "mystique",
-];
+// const words2 = [
+//   "eclipse",
+//   "harmony",
+//   "cascade",
+//   "labyrinth",
+//   "quartz",
+//   "serendipity",
+//   "zenith",
+//   "ephemeral",
+//   "vortex",
+//   "mystique",
+// ];
 
-function averageWordLength(words) {
-  const joinedWords = words.join("");
-  const charAverage = joinedWords.length / words.length;
-  return charAverage;
-}
+// function averageWordLength(words) {
+//   const joinedWords = words.join("");
+//   const charAverage = joinedWords.length / words.length;
+//   return charAverage;
+// }
 
-console.log(averageWordLength(words2));
+// console.log(averageWordLength(words2));
 
-// Unique arrays - return an array without duplicates
+// // Unique arrays - return an array without duplicates
 
-const words3 = [
-  "crab",
-  "poison",
-  "contagious",
-  "simple",
-  "bring",
-  "sharp",
-  "playground",
-  "poison",
-  "communion",
-  "simple",
-  "bring",
-];
+// const words3 = [
+//   "crab",
+//   "poison",
+//   "contagious",
+//   "simple",
+//   "bring",
+//   "sharp",
+//   "playground",
+//   "poison",
+//   "communion",
+//   "simple",
+//   "bring",
+// ];
 
-function uniquifyArray(words) {
-  let newArray = [];
-  words.forEach((word) => {
-    if (!newArray.includes(word)) {
-      newArray.push(word);
-    }
-  });
-  return newArray;
-}
+// function uniquifyArray(words) {
+//   let newArray = [];
+//   words.forEach((word) => {
+//     if (!newArray.includes(word)) {
+//       newArray.push(word);
+//     }
+//   });
+//   return newArray;
+// }
 
-console.log(uniquifyArray(words3));
+// console.log(uniquifyArray(words3));
 
-// Find elements
-const wordsFind = [
-  "machine",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "truth",
-  "disobedience",
-];
+// // Find elements
+// const wordsFind = [
+//   "machine",
+//   "subset",
+//   "trouble",
+//   "starting",
+//   "matter",
+//   "eating",
+//   "truth",
+//   "disobedience",
+// ];
 
-function doesWordExist(haystack, needle) {
-  return haystack.includes(needle);
-}
+// function doesWordExist(haystack, needle) {
+//   return haystack.includes(needle);
+// }
 
-console.log(doesWordExist(wordsFind, "machines"));
+// console.log(doesWordExist(wordsFind, "machines"));
 
-// Count repetition
+// // Count repetition
 
-const wordsCount = [
-  "machine",
-  "matter",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "matter",
-  "truth",
-  "disobedience",
-  "matter",
-];
+// const wordsCount = [
+//   "machine",
+//   "matter",
+//   "subset",
+//   "trouble",
+//   "starting",
+//   "matter",
+//   "eating",
+//   "matter",
+//   "truth",
+//   "disobedience",
+//   "matter",
+// ];
 
-function howManyTimes(haystack, needle) {
-  let count = 0;
-  haystack.forEach((word) => {
-    if (word === needle) {
-      count++;
-    }
-  });
-  return count;
-}
+// function howManyTimes(haystack, needle) {
+//   let count = 0;
+//   haystack.forEach((word) => {
+//     if (word === needle) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
 
-console.log(howManyTimes(wordsCount, "matter"));
+// console.log(howManyTimes(wordsCount, "matter"));
 
-// Bonus: A generic sum function
-// for strings use the length of the string, for booleans use 1 and 0
-const mixedArray = [
-  "apple",
-  "banana",
-  "cherry",
-  "date",
-  42,
-  7,
-  1995,
-  23,
-  true,
-  false,
-];
+// // Bonus: A generic sum function
+// // for strings use the length of the string, for booleans use 1 and 0
+// const mixedArray = [
+//   "apple",
+//   "banana",
+//   "cherry",
+//   "date",
+//   42,
+//   7,
+//   1995,
+//   23,
+//   true,
+//   false,
+// ];
 
-function sum(array) {
-  let count = 0;
-  array.forEach((item) => {
-    if (typeof item === "string") {
-      count += item.length;
-    } else if (typeof item === "boolean") {
-      item ? count++ : null;
-    } else {
-      count += item;
-    }
-  });
-  return count;
-}
+// function sum(array) {
+//   let count = 0;
+//   array.forEach((item) => {
+//     if (typeof item === "string") {
+//       count += item.length;
+//     } else if (typeof item === "boolean") {
+//       item ? count++ : null;
+//     } else {
+//       count += item;
+//     }
+//   });
+//   return count;
+// }
 
-console.log(sum(mixedArray));
+// console.log(sum(mixedArray));
 
 // Bonus: Write a function that calculates the greatest product of four
 // numbers that is either horizontally or vertically in the array
@@ -232,17 +232,36 @@ const matrix = [
 ];
 
 function greatestProduct(matrix) {
-  // TODO:
+  let allHorizontalAndVerticalArrays = [...matrix];
+  for (let n = 0; n < 20; n++) {
+    let tempVerticalArray = [];
+    for (let i = 0; i < 20; i++) {
+      tempVerticalArray.push(matrix[i][n]);
+    }
+    allHorizontalAndVerticalArrays.push(tempVerticalArray);
+  }
+
+  let filteredArrays = [];
+  allHorizontalAndVerticalArrays.forEach((array) => {
+    let arrayCopy = [...array];
+    let fourGreatestNumbers = [];
+    for (i = 0; i < 4; i++) {
+      const maxNum = Math.max(...arrayCopy);
+      const indexOfMaxNum = arrayCopy.indexOf(maxNum);
+      fourGreatestNumbers.push(maxNum);
+      arrayCopy.splice(indexOfMaxNum, 1);
+    }
+    filteredArrays.push(fourGreatestNumbers);
+  });
+  let highestProducts = [];
+  filteredArrays.forEach((array) => {
+    const product = array.reduce((a, b) => a * b);
+    highestProducts.push(product);
+  });
+
+  const highestTotal = Math.max(...highestProducts);
+
+  return highestTotal;
 }
 
-module.exports = {
-  maxOfTwoNumbers,
-  findLongestWord,
-  sumNumbers,
-  averageWordLength,
-  uniquifyArray,
-  doesWordExist,
-  howManyTimes,
-  sum,
-  greatestProduct,
-};
+console.log(greatestProduct(matrix));
