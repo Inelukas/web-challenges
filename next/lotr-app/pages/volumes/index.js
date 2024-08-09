@@ -8,9 +8,9 @@ export default function Volumes() {
       <p>{introduction}</p>
       <h2>All Volumes</h2>
       <ul>
-        {volumes.map((volume) => {
+        {volumes.map((volume, index) => {
           return (
-            <li key={volume}>
+            <li key={index}>
               <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
             </li>
           );

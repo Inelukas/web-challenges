@@ -14,9 +14,9 @@ export default function ThirdMovie() {
       <h1>{thirdMovie.title}</h1>
       <p>{thirdMovie.description}</p>
       <ul>
-        {thirdMovie.books.map((book) => {
+        {thirdMovie.books.map((book, index) => {
           return (
-            <li>
+            <li key={index}>
               {book.ordinal}: {book.title}
             </li>
           );

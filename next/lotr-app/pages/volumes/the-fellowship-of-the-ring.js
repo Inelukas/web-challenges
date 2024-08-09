@@ -14,9 +14,9 @@ export default function FirstMovie() {
       <h1>{firstMovie.title}</h1>
       <p>{firstMovie.description}</p>
       <ul>
-        {firstMovie.books.map((book) => {
+        {firstMovie.books.map((book, index) => {
           return (
-            <li>
+            <li key={index}>
               {book.ordinal}: {book.title}
             </li>
           );

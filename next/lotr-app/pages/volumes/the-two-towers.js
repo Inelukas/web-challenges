@@ -12,9 +12,9 @@ export default function SecondMovie() {
       <h1>{secondMovie.title}</h1>
       <p>{secondMovie.description}</p>
       <ul>
-        {secondMovie.books.map((book) => {
+        {secondMovie.books.map((book, index) => {
           return (
-            <li>
+            <li key={index}>
               {book.ordinal}: {book.title}
             </li>
           );
