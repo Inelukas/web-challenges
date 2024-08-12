@@ -15,13 +15,13 @@ export default function App({ Component, pageProps }) {
     { name: "Office", isOn: false, id: uid() },
   ]);
 
-  const [lightCount, setLightCount] = useState(0);
+  const lightCount = countLights();
 
-  useEffect(() => {
+  function countLights() {
     let lightsOn = 0;
-    lights.forEach((light) => (light.isOn === true ? lightsOn++ : 0));
-    setLightCount(lightsOn);
-  }, [lights]);
+    lights.forEach((light) => (light.isOn === true ? lightsOn++ : null));
+    return lightsOn;
+  }
 
   function handleToggle(id) {
     setLights(
