@@ -1,7 +1,7 @@
 import GlobalStyle from "../styles";
 import Layout from "../components/Layout";
 import { uid } from "uid";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
   const [lights, setLights] = useState([
