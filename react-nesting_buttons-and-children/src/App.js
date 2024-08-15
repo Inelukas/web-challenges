@@ -7,14 +7,14 @@ export default function App() {
       <Button>Ich bin Button 1</Button>
       <Button>Und ich zwei</Button>
       <Button>Ich drei</Button>
-      <Button>Numero Vier</Button>
+      <Button type="submit">Numero Vier</Button>
     </main>
   );
 }
 
-function Button({children}) {
+function Button({ children, type = "button" }) {
   return (
-    <button className="button" type="button">
+    <button className="button" type={type}>
       {children}
     </button>
   );

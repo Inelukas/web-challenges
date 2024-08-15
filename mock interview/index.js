@@ -163,8 +163,8 @@ function sum(array) {
 
 console.log(sum(mixedArray));
 
-// Bonus: Write a function that calculates the greatest product of four
-// numbers that is either horizontally or vertically in the array
+Bonus: Write a function that calculates the greatest product of four
+numbers that is either horizontally or vertically in the array
 
 const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
@@ -270,3 +270,33 @@ function greatestProduct(matrix) {
 }
 
 console.log(greatestProduct(matrix));
+
+// function greatestProduct(matrix) {
+//   let maxProduct = 0;
+
+//   // Check horizontally
+//   for (let i = 0; i < matrix.length; i++) {
+//     for (let j = 0; j < matrix[i].length - 3; j++) {
+//       const product =
+//         matrix[i][j] * matrix[i][j + 1] * matrix[i][j + 2] * matrix[i][j + 3];
+//       if (product > maxProduct) {
+//         maxProduct = product;
+//       }
+//     }
+//   }
+
+//   // Check vertically
+//   for (let i = 0; i < matrix.length - 3; i++) {
+//     for (let j = 0; j < matrix[i].length; j++) {
+//       const product =
+//         matrix[i][j] * matrix[i + 1][j] * matrix[i + 2][j] * matrix[i + 3][j];
+//       if (product > maxProduct) {
+//         maxProduct = product;
+//       }
+//     }
+//   }
+
+//   return maxProduct;
+// }
+
+// console.log(greatestProduct(matrix));

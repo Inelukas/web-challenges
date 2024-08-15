@@ -4,7 +4,7 @@ import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import {uid} from "uid"
+import { uid } from "uid";
 
 const initialEntries = [
   {
@@ -37,20 +37,21 @@ const initialEntries = [
 ];
 
 function App() {
-
-  const [entries, setEntries] = useState(initialEntries)
+  const [entries, setEntries] = useState(initialEntries);
 
   function handleEntry(newEntry) {
-    const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" })
-    setEntries([{id: uid(), date: date, ...newEntry}, ...initialEntries])
+    const date = new Date().toLocaleDateString("en-us", {
+      dateStyle: "medium",
+    });
+    setEntries([{ id: uid(), date: date, ...newEntry }, ...entries]);
   }
 
   return (
     <div className="app">
       <Header />
       <main className="app__main">
-        <EntryForm onAddEntry={handleEntry}/>
-        <EntriesSection entries={entries}/>
+        <EntryForm onAddEntry={handleEntry} />
+        <EntriesSection entries={entries} />
       </main>
       <Footer />
     </div>

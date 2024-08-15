@@ -11,22 +11,22 @@ export default function App() {
       <Button
         color={"red"}
         text="Ich bin ein Button"
-        clickEvent={handleClick}
+        onClick={handleClick}
       />
       <Button
         color={"grey"}
         text="Ich bin auch ein Button"
-        clickEvent={handleClick}
+        onClick={handleClick}
         disabled
       />
     </>
   );
 }
 
-function Button({ color, disabled, text, clickEvent }) {
+function Button({ color, disabled, text, onClick }) {
   return (
     <button
-      onClick={disabled ? null : clickEvent}
+      onClick={disabled ? null : onClick}
       style={{ backgroundColor: color }}
     >
       {text}
